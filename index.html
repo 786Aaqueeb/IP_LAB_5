@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EXPT 5: Advanced Javascript</title>
+    <link rel="stylesheet" href="exp5.css" />
+  </head>
+  <body>
+    <center>
+      <div class="container">
+        <h1>Basic Calculator</h1>
+        <input type="number" id="num1" placeholder="Enter first number" />
+        <input type="number" id="num2" placeholder="Enter second number" />
+        <select id="operator">
+          <option value="add">Addition (+)</option>
+          <option value="subtract">Subtraction (-)</option>
+          <option value="multiply">Multiplication (*)</option>
+          <option value="divide">Division (/)</option>
+        </select>
+        <button onclick="calculate()" class="buttons">Calculate</button>
+        <p id="result"></p>
+      </div>
+
+      <div class="container">
+        <h1>Custom Iterator for Squares</h1>
+        <form>
+          <label for="numbers">Enter numbers (separated by comma):</label>
+          <input type="text" id="numbers" placeholder="1, 2, 3, 4, 5" /><br>
+          <button type="button" onclick="generateSquares()" class="buttons">
+            Generate Squares
+          </button>
+        </form>
+        <p id="output-2"></p>
+      </div>
+
+      <div class="container">
+        <h1>Prime Number Generator</h1>
+        <form>
+          <label for="limit">Enter a limit for prime numbers:</label>
+          <input type="number" id="limit" placeholder="Enter limit" min="2" /><br>
+          <button type="button" onclick="displayPrimes()" class="buttons">
+            Generate Primes
+          </button>
+        </form>
+        <p id="output-3"></p>
+      </div>
+    </center>
+
+    <script src="index.js"></script>
+  </body>
+</html>
